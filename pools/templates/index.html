@@ -1,0 +1,12 @@
+<html>
+<title>Questions</title>
+<head></head>
+<body>
+    {% for q in question %}
+        <h1>{{q.question_text}}</h1>
+        <h2>{{q.closed}}</h2>
+        <h3>{{q.pub_date}}</h3>
+    {% endfor %}
+    <a href="{% url 'question_fechada' %}">ir para questoes fechadas</a>
+</body>
+</html>
